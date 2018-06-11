@@ -12,6 +12,26 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+function fizzBuzz(n) {
+  // iterate through range
+  for (let i = 1; i <= n; i++) {
+    // set result to empty str
+    let result = '';
+    // if divisible by 3, result += 'fizz'
+    if (i % 3 === 0) {
+      result += 'fizz';
+    }
+    // if divisible by 5, result += 'buzz'
+    if (i % 5 === 0) {
+      result += 'buzz';
+    }
+    // if !result, result = curr
+    if (!result) {
+      result = i;
+    }
+    // log result
+    console.log(result);
+  }
+}
 
 module.exports = fizzBuzz;
