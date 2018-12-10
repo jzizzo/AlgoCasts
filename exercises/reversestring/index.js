@@ -13,7 +13,6 @@ function reverse(str) {
   for (let i = str.length - 1; i >= 0 ; i--) {
       // add our current letter to the result
       reversedStr += str[i];
-      debugger;
     }
     // return result
     return reversedStr;
